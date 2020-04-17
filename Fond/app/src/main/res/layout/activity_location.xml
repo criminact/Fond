@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/splash"
+    android:padding="40dp"
+    tools:context=".View.LocationActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:foregroundGravity="center"
+        app:cardElevation="12dp"
+        app:cardMaxElevation="12dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/locationText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:fontFamily="@font/nunito_sans"
+                android:text="For better matching, We suggest you to set location."
+                android:textColor="#95000000"
+                android:textSize="18dp" />
+
+            <Button
+                android:id="@+id/locationButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/locationText"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="12dp"
+                android:background="@drawable/outlinedbutton"
+                android:drawableLeft="@drawable/currentlocation"
+                android:paddingLeft="16dp"
+                android:text="Use my current location"
+                android:textAllCaps="true"
+                android:textColor="@color/colorPrimary"
+                android:textSize="10dp" />
+
+            <TextView
+                android:id="@+id/addressLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/locationButton"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/nunito_sans"
+                android:textColor="#000"
+                android:textSize="14dp" />
+
+            <Button
+                android:id="@+id/nextfour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/addressLocation"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="false"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/outlinedbutton"
+                android:fontFamily="@font/nunito_sans"
+                android:paddingLeft="8dp"
+                android:paddingTop="4dp"
+                android:paddingRight="8dp"
+                android:paddingBottom="4dp"
+                android:text="Next"
+                android:textAllCaps="false"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

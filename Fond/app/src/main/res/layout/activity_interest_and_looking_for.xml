@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/splash"
+    android:padding="40dp"
+    tools:context=".View.InterestAndLookingFor">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:foregroundGravity="center"
+        app:cardElevation="12dp"
+        app:cardMaxElevation="12dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/fondInterestIntro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nunito_sans"
+                android:text="What are you looking for $NAME?"
+                android:textColor="#95000000"
+                android:textSize="18dp" />
+
+            <Spinner
+                android:id="@+id/lookingForField"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/fondInterestIntro"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/nunito_sans"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:textColorHint="#66000000" />
+
+            <TextView
+                android:id="@+id/fondWishToSeeIntro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lookingForField"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/nunito_sans"
+                android:text="Whom do you wish to see?"
+                android:textColor="#95000000"
+                android:textSize="18dp" />
+
+            <Spinner
+                android:id="@+id/wishToSeeField"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/fondWishToSeeIntro"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/nunito_sans"
+                android:inputType="number"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:textColorHint="#66000000" />
+
+            <Button
+                android:id="@+id/nextthree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/wishToSeeField"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="false"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/outlinedbutton"
+                android:fontFamily="@font/nunito_sans"
+                android:paddingLeft="8dp"
+                android:paddingTop="4dp"
+                android:paddingRight="8dp"
+                android:paddingBottom="4dp"
+                android:text="Next"
+                android:textAllCaps="false" />
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

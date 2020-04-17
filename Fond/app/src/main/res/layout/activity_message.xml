@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.MessageActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewinMessage"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        app:cardElevation="12dp"
+        android:elevation="12dp"
+        android:layout_alignParentTop="true"
+        app:cardBackgroundColor="@color/colorPrimary">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profileinImage"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:src="@mipmap/fond" />
+
+            <TextView
+                android:id="@+id/nameinMessage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="5dp"
+                android:layout_toRightOf="@+id/profileinImage"
+                android:fontFamily="@font/nunito_sans"
+                android:text="Name"
+                android:textColor="#fff"
+                android:textSize="16dp" />
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/cardViewinMessage"
+        android:id="@+id/recyclerView_chat"
+        android:layout_above="@+id/messageSender" />
+
+
+    <EditText
+        android:id="@+id/messageSender"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:background="#fff"
+        android:fontFamily="@font/nunito_sans"
+        android:hint="Type a message"
+        android:inputType="textUri"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:textColorHint="#90000000" />
+
+    <ImageButton
+        android:id="@+id/sender"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/transparent"
+        android:src="@drawable/send" />
+
+
+</RelativeLayout>

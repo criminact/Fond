@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "153711714694",
+    "firebase_url": "https://fond-c4861.firebaseio.com",
+    "project_id": "fond-c4861",
+    "storage_bucket": "fond-c4861.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:153711714694:android:8ec1afb5cccdca49d4cc07",
+        "android_client_info": {
+          "package_name": "com.noobcode.fond"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "153711714694-bh6hqiil970hnk3n5funrigdqds4ntbc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.noobcode.fond",
+            "certificate_hash": "f7ace0030f8f99b272cce062753ea32f150424e3"
+          }
+        },
+        {
+          "client_id": "153711714694-eihtpseieg1qe0njjoic89rgu9jr78vm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBToibGxUe3WqjdRc-yf1KxY0C0aTZXfMM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "153711714694-eihtpseieg1qe0njjoic89rgu9jr78vm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

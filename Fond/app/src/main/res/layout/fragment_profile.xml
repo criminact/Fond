@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/profilesplash"
+    tools:context=".View.Fragments.ProfileFragment">
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+     <RelativeLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content">
+               <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profileinprofile"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:src="@mipmap/logo" />
+
+        <TextView
+            android:id="@+id/detailstext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/profileinprofile"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="32dp"
+            android:fontFamily="@font/nunito_sans"
+            android:text="Profile details"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/nametext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/detailstext"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginRight="32dp"
+            android:fontFamily="@font/nunito_sans"
+            android:text="Name"
+            android:textColor="#90000000"
+            android:textSize="16dp" />
+
+        <EditText
+            android:id="@+id/nameinprofile"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_below="@+id/nametext"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="32dp"
+            android:background="@drawable/texfieldwhitebackground"
+            android:fontFamily="@font/nunito_sans"
+            android:paddingLeft="8dp" />
+
+        <TextView
+            android:id="@+id/biotext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nameinprofile"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginRight="32dp"
+            android:fontFamily="@font/nunito_sans"
+            android:text="Short Bio"
+            android:textColor="#90000000"
+            android:textSize="16dp" />
+
+        <EditText
+            android:id="@+id/bioinprofile"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_below="@id/biotext"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="32dp"
+            android:background="@drawable/texfieldwhitebackground"
+            android:fontFamily="@font/nunito_sans"
+            android:hint="About me"
+            android:paddingLeft="8dp"
+            android:textColorHint="#90000000"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/agetext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bioinprofile"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginRight="32dp"
+            android:fontFamily="@font/nunito_sans"
+            android:text="Age"
+            android:textColor="#90000000"
+            android:textSize="16dp" />
+
+        <EditText
+            android:id="@+id/ageinprofile"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_marginBottom="80dp"
+            android:layout_below="@+id/agetext"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="32dp"
+            android:background="@drawable/texfieldwhitebackground"
+            android:fontFamily="@font/nunito_sans"
+            android:paddingLeft="8dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="40dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/savedetails"
+                android:layout_width="70dp"
+                android:layout_height="42dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:background="@color/colorPrimaryDark"
+                android:fontFamily="@font/nunito_sans"
+                android:text="Save Details"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="18dp" />
+
+
+       <!--     <Button
+                android:id="@+id/logout"
+                android:layout_width="70dp"
+                android:layout_height="42dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:fontFamily="@font/nunito_sans"
+                android:text="Log out"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="18dp" />
+-->
+        </LinearLayout>
+     </RelativeLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+    </RelativeLayout>
