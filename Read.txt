@@ -1,0 +1,1 @@
+This repository contains the following - index.html (Privacy terms for it's users) and also has a folder Fond(Android Project).
